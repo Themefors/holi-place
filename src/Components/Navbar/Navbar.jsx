@@ -82,7 +82,7 @@ export default function Navbar() {
             </div>
 
             {/* Center - Logo */}
-            <div className="flex-1 flex justify-center lg:flex-none lg:mx-8">
+            <div className="flex-1 flex justify-center items-center lg:flex-none lg:mx-8">
               <Link href="/" className="flex items-center">
                 <Image
                   src={images.image.logo} // Corrected image path
