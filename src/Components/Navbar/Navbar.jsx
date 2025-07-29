@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, ChevronDown, LayoutGrid } from "lucide-react"
-import images from "../../../public/images"
+import { Menu, X, ChevronDown, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import images from "../../../public/images" // Assuming this import path is correct for your project
 
 // Dynamic navigation links
 const leftNavLinks = [
@@ -58,11 +58,49 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Top Navbar - Hidden on scroll */}
+      <div className={`bg-gray-100 py-2 text-sm text-gray-600 hidden md:block ${isScrolled ? "hidden" : ""}`}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-0 flex justify-between items-center">
+          {/* Contact Info */}
+          <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-1">
+              <Phone className="h-4 w-4 text-[#ffd54f]" />
+              <span>+123 456 7890</span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <Mail className="h-4 w-4 text-[#ffd54f]" />
+              <span>info@example.com</span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <MapPin className="h-4 w-4 text-[#ffd54f]" />
+              <span>123 Street, City, Country</span>
+            </div>
+          </div>
+
+          {/* Social Media Links */}
+          <div className="flex items-center space-x-4">
+            <Link href="https://facebook.com" target="_blank" className="hover:text-[#ffd54f] transition-colors">
+              <Facebook className="h-4 w-4" />
+            </Link>
+            <Link href="https://twitter.com" target="_blank" className="hover:text-[#ffd54f] transition-colors">
+              <Twitter className="h-4 w-4" />
+            </Link>
+            <Link href="https://instagram.com" target="_blank" className="hover:text-[#ffd54f] transition-colors">
+              <Instagram className="h-4 w-4" />
+            </Link>
+            <Link href="https://linkedin.com" target="_blank" className="hover:text-[#ffd54f] transition-colors">
+              <Linkedin className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navbar */}
       <nav
         className={`transition-all duration-300 ease-in-out w-full z-50 bg-white ${
           isScrolled
-            ? "fixed shadow-md py-4" // Fixed, white background, shadow, reduced padding
-            : "relative py-8" // Relative, white background, more padding for initial state
+            ? "fixed top-0 shadow-md py-4" // Added top-0 here to ensure it sticks to the top
+            : "relative py-8"
         }`}
       >
         <div className="container mx-auto px-5 lg:px-0">
@@ -80,12 +118,11 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-
             {/* Center - Logo */}
             <div className="flex-1 flex justify-center items-center lg:flex-none lg:mx-8">
               <Link href="/" className="flex items-center">
                 <Image
-                  src={images.image.logo} // Corrected image path
+                  src={images.image.logo || "/placeholder.svg"} // Corrected image path
                   width={150} // Adjusted width based on screenshot
                   height={40} // Adjusted height
                   alt="Tawha Logo"
@@ -93,7 +130,6 @@ export default function Navbar() {
                 />
               </Link>
             </div>
-
             {/* Right Side - Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-8">
               {rightNavLinks.map((link) => (
@@ -107,13 +143,12 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href="/donate" // Changed to donate
+                href="/admission" // Changed to admission
                 className="bg-[#ffd54f] text-lg text-black font-medium px-6 py-3 rounded-md hover:bg-black hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
-                Donate Now
+                Admission Now
               </Link>
             </div>
-
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
               <button
@@ -126,7 +161,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-
       {/* Mobile Drawer Menu */}
       <div
         className={`fixed inset-0 z-[9999] lg:hidden transition-opacity duration-300 ease-in-out ${
@@ -135,7 +169,6 @@ export default function Navbar() {
       >
         {/* Backdrop */}
         <div className="absolute inset-0 bg-black bg-opacity-50" onClick={closeMobileMenu}></div>
-
         {/* Drawer */}
         <div
           className={`fixed right-0 top-0 h-full w-[80%] bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
@@ -152,7 +185,6 @@ export default function Navbar() {
                 <X className="h-6 w-6" />
               </button>
             </div>
-
             {/* Navigation Links */}
             <nav className="flex-1 px-6">
               <div className="space-y-4">
@@ -168,15 +200,14 @@ export default function Navbar() {
                 ))}
               </div>
             </nav>
-
             {/* Admission Button */}
             <div className="p-6">
               <Link
-                href="/donate"
+                href="/admission" // Changed to admission
                 onClick={closeMobileMenu}
                 className="block w-full text-center bg-[#ffd54f] text-black font-medium px-4 py-3 rounded-md hover:bg-[#ffcc02] transition-colors duration-300"
               >
-                Donate Now
+                Admission Now
               </Link>
             </div>
           </div>
