@@ -1,4 +1,6 @@
+import AboutSection from "@/Components/Home/AboutSection";
 import Hero from "@/Components/Home/Hero";
+import PrayerTimes from "@/Components/Home/PrayerTimes";
 
 // ✅ Page-specific metadata
 export const metadata = {
@@ -28,6 +30,8 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <PrayerTimes />
+      <AboutSection />
     </div>
   );
 }
