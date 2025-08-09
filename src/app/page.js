@@ -1,6 +1,9 @@
 import AboutSection from "@/Components/Home/AboutSection";
 import Hero from "@/Components/Home/Hero";
 import PrayerTimes from "@/Components/Home/PrayerTimes";
+import Services from "@/Components/Home/Services";
+import Teachers from "@/Components/Home/Teachers";
+import Testimonials from "@/Components/Home/Testimonials";
 
 // ✅ Page-specific metadata
 export const metadata = {
@@ -32,6 +35,9 @@ export default function Home() {
       <Hero />
       <PrayerTimes />
       <AboutSection />
+      <Services />
+      <Testimonials />
+      <Teachers />
     </div>
   );
 }

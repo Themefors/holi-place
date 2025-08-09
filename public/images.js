@@ -9,6 +9,15 @@ import mashjid from "./mashjid.svg";
 import visionIcon from "./vs_1.svg";
 import missionIcon from "./vs_2.svg";
 import moon from "./moon.svg";
+import makka from "./makka.png";
+import masq from "./masq.png";
+import quranstudy from "./quranstudy.png";
+import teacher1 from "./teacher1.png";
+import teacher2 from "./teacher2.png";
+import teacher3 from "./teacher3.png";
+import teacher4 from "./teacher4.png";
+
+
 const images = {
   image: {
     logo,
@@ -17,6 +26,13 @@ const images = {
     hero_3,
     about_1,
     about_2,
+    masq,
+    quranstudy,
+    makka,
+    teacher1,
+    teacher2,
+    teacher3,
+    teacher4
 
   },
   svg: {

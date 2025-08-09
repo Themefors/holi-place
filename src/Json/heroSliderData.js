@@ -4,21 +4,21 @@ const heroSliderData = [
   {
     image: {
       src: images.image.hero_1,
-      alt: "Mosque silhouette under moonlight with stars",
+      alt: "চাঁদের আলো ও তারার নিচে মসজিদের সিলুয়েট",
     },
     arabicText: "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-    arabicSubText: "In the name of Allah, the Most Gracious, the Most Merciful",
-    title: "A Journey Towards Divine Knowledge",
+    arabicSubText: "আল্লাহ্‌র নামে, যিনি পরম করুণাময়, অতি দয়ালু",
+    title: "আল্লাহর জ্ঞানের পথে একটি যাত্রা",
     description:
-      "Begin your spiritual and educational journey with us, where traditional Islamic values meet modern learning. Our mission is to nurture enlightened individuals through authentic Islamic education.",
+      "আমাদের সঙ্গে আপনার আধ্যাত্মিক ও শিক্ষামূলক যাত্রা শুরু করুন, যেখানে ইসলামী মূল্যবোধের সঙ্গে আধুনিক শিক্ষা একত্রিত হয়েছে। আমাদের লক্ষ্য হল বিশুদ্ধ ইসলামী শিক্ষার মাধ্যমে আলোকিত মানুষ গড়ে তোলা।",
     buttons: [
       {
-        text: "Explore Courses",
+        text: "কোর্সসমূহ দেখুন",
         link: "/courses",
         style: "yellow",
       },
       {
-        text: "Listen to Quran",
+        text: "কোরআন শুনুন",
         link: "/quran",
         style: "white",
         icon: "Play",
@@ -28,21 +28,21 @@ const heroSliderData = [
   {
     image: {
       src: images.image.hero_2,
-      alt: "Islamic calligraphy and open Quran",
+      alt: "ইসলামী ক্যালিগ্রাফি ও খোলা কোরআন",
     },
     arabicText: "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
-    arabicSubText: "My Lord, increase me in knowledge — [Taha:114]",
-    title: "Empowering Minds Through Faith & Wisdom",
+    arabicSubText: "বলুন: হে আমার প্রভু, আমাকে জ্ঞানে বৃদ্ধি করুন — [তাহা: ১১৪]",
+    title: "ঈমান ও প্রজ্ঞার মাধ্যমে মনকে শক্তিশালী করা",
     description:
-      "Our experienced scholars and teachers provide students with a deep understanding of Islamic teachings, Quran, and Hadith while ensuring a strong moral foundation.",
+      "আমাদের অভিজ্ঞ আলেম ও শিক্ষকবৃন্দ শিক্ষার্থীদেরকে ইসলামী শিক্ষা, কোরআন ও হাদিসের গভীর জ্ঞান প্রদান করেন এবং দৃঢ় নৈতিক ভিত্তি নিশ্চিত করেন।",
     buttons: [
       {
-        text: "Meet Our Scholars",
+        text: "আমাদের আলেমদের সাথে পরিচিত হোন",
         link: "/about",
         style: "yellow",
       },
       {
-        text: "Daily Quran Recitation",
+        text: "দৈনিক কোরআন তিলাওয়াত",
         link: "/quran",
         style: "white",
         icon: "Play",
@@ -52,16 +52,16 @@ const heroSliderData = [
   {
     image: {
       src: images.image.hero_3,
-      alt: "Student learning in madrasa under natural light",
+      alt: "প্রাকৃতিক আলোতে মাদ্রাসায় শিক্ষার্থীর অধ্যয়ন",
     },
     arabicText: "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ",
-    arabicSubText: "Allah is the Light of the heavens and the earth — [An-Nur:35]",
-    title: "Learning With Light and Purpose",
+    arabicSubText: "আল্লাহ আসমানসমূহ ও পৃথিবীর আলো — [আন-নূর: ৩৫]",
+    title: "আলো ও উদ্দেশ্য নিয়ে শিক্ষা",
     description:
-      "Study the Quran, Hadith, Fiqh, and more through our accessible and structured programs designed for all ages. Learn anytime, anywhere with our online platform.",
+      "আমাদের সুশৃঙ্খল প্রোগ্রামের মাধ্যমে কোরআন, হাদিস, ফিকহ এবং আরও অনেক কিছু শিখুন, যা সকল বয়সের জন্য সহজলভ্য। অনলাইনে যেকোনো সময়, যেকোনো স্থানে শেখার সুযোগ নিন।",
     buttons: [
       {
-        text: "Join Us Today",
+        text: "আজই যোগ দিন",
         link: "/admission",
         style: "yellow",
       },

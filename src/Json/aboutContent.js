@@ -1,38 +1,37 @@
 import images from "../../public/images";
 
-
 const aboutContent = {
   about: {
-    title: "About Us",
-    subtitle: "A Harmony of Spirituality and Modern Education",
+    title: "আমাদের সম্পর্কে",
+    subtitle: "আধ্যাত্মিকতা ও আধুনিক শিক্ষার সুমিলন",
     description: [
-      "Our madrasa was established with the goal of providing a high-quality Islamic education alongside modern academic learning. Here, students not only study the Holy Quran and Hadith but also acquire essential skills for contemporary life.",
-      "Our mission is to nurture students who can balance religious knowledge with modernity and become positive contributors to society."
+      "আমাদের মাদ্রাসা প্রতিষ্ঠিত হয়েছে উচ্চমানের ইসলামি শিক্ষা ও আধুনিক একাডেমিক শিক্ষার সমন্বয় সাধনের লক্ষ্যে। এখানে শিক্ষার্থীরা কেবল কোরআন ও হাদিস অধ্যয়ন করে না, বরং সমসাময়িক জীবনের জন্য প্রয়োজনীয় দক্ষতাও অর্জন করে।",
+      "আমাদের লক্ষ্য এমন শিক্ষার্থী গড়ে তোলা যারা ধর্মীয় জ্ঞান ও আধুনিকতার মধ্যে ভারসাম্য বজায় রেখে সমাজে ইতিবাচক অবদান রাখতে পারে।"
     ],
-    mission: "To provide excellent religious and modern education that shapes the next generation into knowledgeable and ethical citizens.",
-    vision: "To be a well-organized and progressive madrasa serving as a beacon of light for the nation and society.",
+    mission: "উচ্চমানের ধর্মীয় ও আধুনিক শিক্ষা প্রদান করে পরবর্তী প্রজন্মকে জ্ঞানী ও নৈতিক নাগরিক হিসেবে গড়ে তোলা।",
+    vision: "একটি সুশৃঙ্খল ও অগ্রসর মাদ্রাসা হিসেবে জাতি ও সমাজের জন্য আলোর প্রদীপ হয়ে ওঠা।",
     values: [
-      "Sincerity and Integrity",
-      "Dedication to Education",
-      "Building Ethical and Ideal Individuals",
-      "Community Service",
-      "Global Perspective"
+      "আন্তরিকতা ও সততা",
+      "শিক্ষার প্রতি নিবেদন",
+      "নৈতিক ও আদর্শবান ব্যক্তি গড়ে তোলা",
+      "সমাজসেবা",
+      "বিশ্বজনীন দৃষ্টি"
     ],
     button: {
-      text: "Learn More",
+      text: "বিস্তারিত জানুন",
       link: "/about"
     },
     images: [
       {
         src: images.image.about_1,
-        alt: "Students studying in a classroom"
+        alt: "ক্লাসরুমে পড়াশোনা করছে শিক্ষার্থীরা"
       },
       {
         src: images.image.about_2,
-        alt: "Islamic teacher guiding a student"
+        alt: "একজন ইসলামি শিক্ষক একজন শিক্ষার্থীকে দিকনির্দেশনা দিচ্ছেন"
       }
     ]
   }
-}
+};
 
 export default aboutContent;

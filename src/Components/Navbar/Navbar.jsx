@@ -8,14 +8,14 @@ import images from "../../../public/images" // Assuming this import path is corr
 
 // Dynamic navigation links
 const leftNavLinks = [
-  { name: "Home", href: "/", hasDropdown: true },
+  { name: "Home", href: "/"},
   { name: "About Us", href: "/about" },
-  { name: "Service", href: "/service", hasDropdown: true },
+  { name: "Service", href: "/service" },
 ]
 
 const rightNavLinks = [
-  { name: "Courses", href: "/courses", hasDropdown: true },
-  { name: "Pages", href: "/pages", hasDropdown: true },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact Us", href: "/contact" },
 ]
 
@@ -114,7 +114,6 @@ export default function Navbar() {
                   className={`flex items-center text-lg font-medium transition-colors duration-300 hover:text-[#ffd54f] text-gray-900`}
                 >
                   {link.name}
-                  {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
                 </Link>
               ))}
             </div>
@@ -139,7 +138,6 @@ export default function Navbar() {
                   className={`flex items-center text-lg font-medium transition-colors duration-300 hover:text-[#ffd54f] text-gray-900`}
                 >
                   {link.name}
-                  {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
                 </Link>
               ))}
               <Link
