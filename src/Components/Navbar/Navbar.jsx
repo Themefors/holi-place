@@ -23,7 +23,6 @@ const allMobileLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Service", href: "/service" },
-  { name: "Courses", href: "/courses" },
   { name: "Pages", href: "/pages" },
   { name: "Contact Us", href: "/contact" },
 ]
