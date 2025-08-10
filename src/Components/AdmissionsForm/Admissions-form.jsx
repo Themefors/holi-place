@@ -3,10 +3,10 @@
 import { useState } from "react"
 import Swal from "sweetalert2"
 import "sweetalert2/dist/sweetalert2.min.css"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "@/components/ui/select"
+import { Button } from "../../Components/ui/button"
+import { Input } from "../../Components/ui/input"
+import { Textarea } from "../../Components/ui/textarea"
+import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "../../Components/ui/select"
 import { Send, UploadCloud } from "lucide-react"
 
 export default function AdmissionsForm() {
