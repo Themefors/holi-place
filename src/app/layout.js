@@ -15,19 +15,21 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Holy-Place | Islamic Madrasah Website Template",
-  description: "Holy-Place is a modern and responsive website template designed for Islamic madrasahs, Quran academies, and Deeni institutions. Built with clean UI and customizable components.",
+  description:
+    "Holy-Place is a modern and responsive website template designed for Islamic madrasahs, Quran academies, and Deeni institutions. Built with clean UI and customizable components.",
   keywords: [
     "Islamic website template",
     "Madrasah template",
     "Quran school website",
     "Holy Place",
     "Deeni school design",
-    "Islamic education site"
+    "Islamic education site",
   ],
-  authors: [{ name: "Shahriar Fardows", url: "https://shahriarfardows.netlify.app/" }],
+  authors: [
+    { name: "Shahriar Fardows", url: "https://shahriarfardows.netlify.app/" },
+  ],
   creator: "Shahriar Fardows",
 };
-
 
 export default function RootLayout({ children }) {
   return (
@@ -35,9 +37,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
         <Navbar />
-        {children}
+        <main>{children}</main>
         <SiteFooter />
       </body>
     </html>
