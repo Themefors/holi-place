@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import aboutContent from "@/Json/aboutContent"
 import images from "../../../public/images"
-import { SpinningText } from "@/components/magicui/spinning-text";
+import { SpinningText } from "../magicui/spinning-text";
 
 const AboutSection = () => {
   const { about } = aboutContent

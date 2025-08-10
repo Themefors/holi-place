@@ -7,7 +7,7 @@ import { Navigation, A11y } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import { BookOpen, Building2, Boxes, ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "../ui/button"
 import gsap from "gsap"
 import services from "@/Json/services"
 

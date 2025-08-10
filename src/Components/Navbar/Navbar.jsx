@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, ChevronDown, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Menu, X,Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 import images from "../../../public/images" // Assuming this import path is correct for your project
 
 // Dynamic navigation links

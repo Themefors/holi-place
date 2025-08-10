@@ -1,13 +1,13 @@
 "use client"
 
 import { useEffect, useId, useRef, useState } from "react"
-import Image from "next/image"
+// import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, A11y, Autoplay } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "../ui/button"
 import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react"
 import gsap from "gsap"
 
@@ -73,7 +73,7 @@ function TestimonialCard({ t, priority = false }) {
 }
 
 const Testimonials = () => {
-  const id = useId().replace(/[:]/g, "")
+  // const id = useId().replace(/[:]/g, "")
   const prevRef = useRef(null)
   const nextRef = useRef(null)
   const containerRef = useRef(null)

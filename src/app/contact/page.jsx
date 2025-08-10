@@ -3,9 +3,9 @@
 import { useState } from "react"
 import Swal from "sweetalert2"
 import "sweetalert2/dist/sweetalert2.min.css"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
+import { Input } from "../../Components/ui/input"
+import { Textarea } from "../../Components/ui/textarea"
+import { Button } from "../../Components/ui/button"
 import { MapPin, Phone, Mail, Send } from "lucide-react"
 
 const page = () => {

@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, A11y, Autoplay } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
-import { Button } from "@/components/ui/button"
+import { Button } from "../ui/button"
 import { Facebook, MessageCircle, Mail, ChevronLeft, ChevronRight } from "lucide-react"
 import gsap from "gsap"
 
