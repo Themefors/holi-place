@@ -29,7 +29,37 @@ export const metadata = {
     { name: "Shahriar Fardows", url: "https://shahriarfardows.netlify.app/" },
   ],
   creator: "Shahriar Fardows",
+
+  openGraph: {
+    title: "Holy-Place | Islamic Madrasah Website Template",
+    description:
+      "Holy-Place is a modern and responsive website template designed for Islamic madrasahs, Quran academies, and Deeni institutions. Built with clean UI and customizable components.",
+    url: "https://holi-place.teachfosys.com/", // replace with your actual URL
+    siteName: "Holy-Place",
+    images: [
+      {
+        url: "https://holi-place.teachfosys.com/logo.png", // replace with your actual image URL
+        width: 1200,
+        height: 630,
+        alt: "Holy-Place Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Holy-Place | Islamic Madrasah Website Template",
+    description:
+      "Holy-Place is a modern and responsive website template designed for Islamic madrasahs, Quran academies, and Deeni institutions. Built with clean UI and customizable components.",
+    images: [
+      "https://holi-place.teachfosys.com/logo.png", // replace with your actual image URL
+    ],
+    creator: "@yourtwitterhandle", // optional Twitter handle
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
